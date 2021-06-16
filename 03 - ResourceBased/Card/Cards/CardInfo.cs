@@ -6,15 +6,13 @@ using System.Linq;
 
 namespace Exilland.GodotCon.CardEffects.Card.Cards
 {
-    public class CardInfo : Node
+    public class CardInfo : Resource
     {
         [Export] private NodePath _effectsHolderNode = ".";
         [Export] public int Cost { get; set; }
         [Export] public string? Title { get; set; }
         [Export(PropertyHint.MultilineText)] public string? Description { get; set; }
 
-        public IEnumerable<CardEffect> Effects => GetNode(_effectsHolderNode)
-            .GetChildren()
-            .OfType<CardEffect>();
+        [Export] public CardEffect[] Effects { get; set; } = new CardEffect[0];
     }
 }

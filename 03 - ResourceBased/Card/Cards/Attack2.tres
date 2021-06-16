@@ -1,0 +1,16 @@
+[gd_resource type="Resource" load_steps=4 format=2]
+
+[ext_resource path="res://Card/Cards/CardInfo.cs" type="Script" id=1]
+[ext_resource path="res://Card/Effects/Attack.cs" type="Script" id=2]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+AttackValue = 3
+
+[resource]
+script = ExtResource( 1 )
+Cost = 0
+Title = "Attack"
+Description = "Attack 3"
+Effects = [ SubResource( 1 ) ]
+_effectsHolderNode = NodePath(".")

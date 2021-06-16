@@ -9,7 +9,7 @@
 [ext_resource path="res://Battle/Zapper0.png" type="Texture" id=7]
 [ext_resource path="res://Battle/Player.cs" type="Script" id=8]
 [ext_resource path="res://Card/Card.tscn" type="PackedScene" id=9]
-[ext_resource path="res://Database/DatabaseSceneBased.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Database/DatabaseResourceBased.tscn" type="PackedScene" id=10]
 
 [node name="Battle" type="Control"]
 anchor_right = 1.0
