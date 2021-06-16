@@ -11,7 +11,7 @@ namespace CardEffectsSceneBased.Card.Cards
         [Export] private NodePath _effectsHolderNode = ".";
         [Export] public int Cost { get; set; }
         [Export] public string? Title { get; set; }
-        [Export] public string? Description { get; set; }
+        [Export(PropertyHint.MultilineText)] public string? Description { get; set; }
 
         public IEnumerable<CardEffect> Effects => GetNode(_effectsHolderNode)
             .GetChildren()

@@ -10,7 +10,7 @@ namespace CardEffectsSceneBased.Card.Effects
 
         public override void Execute(BattleControl battle)
         {
-//            battle.Player.Defense += DefenseValue;
+            battle.Player.Defense += DefenseValue;
         }
     }
 }

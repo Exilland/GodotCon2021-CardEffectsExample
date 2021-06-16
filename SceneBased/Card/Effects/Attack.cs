@@ -10,7 +10,7 @@ namespace CardEffectsSceneBased.Card.Effects
 
         public override void Execute(BattleControl battle)
         {
-            //battle.Enemy.Health -= AttackValue;
+            battle.Enemy.Health -= AttackValue;
         }
     }
 }
