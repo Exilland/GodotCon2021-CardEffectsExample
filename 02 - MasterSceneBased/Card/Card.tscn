@@ -1,0 +1,70 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Theme/FlatUI/kenneyUI.tres" type="Theme" id=1]
+[ext_resource path="res://Card/Card.cs" type="Script" id=2]
+
+[node name="Card" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = -1792.0
+margin_bottom = -824.0
+rect_min_size = Vector2( 192, 256 )
+mouse_filter = 1
+theme = ExtResource( 1 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_horizontal_guides_": [ 34.0581, 109.723 ],
+"_edit_use_anchors_": false
+}
+TitlePath = NodePath("Title")
+DescriptionPath = NodePath("Description")
+
+[node name="Background" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+mouse_filter = 2
+color = Color( 0.21229, 0.23, 0.2047, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="TextureRect" type="TextureRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 16.0
+margin_top = 34.0
+margin_right = -16.0
+margin_bottom = -146.0
+mouse_filter = 2
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Title" type="Label" parent="."]
+anchor_right = 1.0
+margin_left = 4.0
+margin_top = 16.0
+margin_right = -4.0
+margin_bottom = 14.0
+text = "Title"
+align = 1
+valign = 1
+uppercase = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Description" type="Label" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_left = 14.0
+margin_top = 110.0
+margin_right = -14.0
+margin_bottom = -14.0
+text = "Attack 3
+Defend 3"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
