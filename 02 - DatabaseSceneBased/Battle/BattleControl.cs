@@ -1,11 +1,11 @@
-using CardEffectsSceneBased.Database;
+using Exilland.GodotCon.CardEffects.Database;
 using Godot;
 using GodotOnReady.Attributes;
 using JetBrains.Annotations;
 using System;
 using System.Linq;
 
-namespace CardEffectsSceneBased.Battle
+namespace Exilland.GodotCon.CardEffects.Battle
 {
     public partial class BattleControl : Control
     {
@@ -14,7 +14,6 @@ namespace CardEffectsSceneBased.Battle
         [OnReadyGet] public Hand Hand { get; set; } = null!;
         [OnReadyGet] public Deck Deck { get; set; } = null!;
         [OnReadyGet] public Deck Discard { get; set; } = null!;
-        [Export] private PackedScene? _databaseScene { get; set; }
         [Export] private PackedScene? _cardScene { get; set; }
 
         private bool mouseOverPlayArea;
@@ -26,7 +25,7 @@ namespace CardEffectsSceneBased.Battle
             if (_cardScene == null)
                 return;
 
-            var database = _databaseScene?.InstanceOrNull<IDatabase>();
+            var database = GetNode<IDatabase>("/root/Database");
             if (database == null)
                 return;
 
@@ -37,11 +36,6 @@ namespace CardEffectsSceneBased.Battle
                 Deck.AddCard(card);
             }
             Deck.Shuffle();
-
-            if (database is Node databaseNode)
-            {
-                databaseNode.QueueFree();
-            }
         }
 
         [OnReady]

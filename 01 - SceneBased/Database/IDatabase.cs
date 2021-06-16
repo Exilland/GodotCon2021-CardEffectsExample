@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using CardEffectsSceneBased.Card.Cards;
+using Exilland.GodotCon.CardEffects.Card.Cards;
 
-namespace CardEffectsSceneBased.Database
+namespace Exilland.GodotCon.CardEffects.Database
 {
     public interface IDatabase
     {

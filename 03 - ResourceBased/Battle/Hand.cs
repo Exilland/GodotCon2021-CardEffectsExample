@@ -4,7 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CardEffectsSceneBased.Battle
+namespace Exilland.GodotCon.CardEffects.Battle
 {
     public partial class Hand : Control
     {

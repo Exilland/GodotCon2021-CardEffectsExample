@@ -10,9 +10,13 @@ config_version=4
 
 [application]
 
-config/name="Card Effects Scene Based"
+config/name="Card Effects Database Based"
 run/main_scene="res://Battle/Battle.tscn"
 config/icon="res://icon.png"
+
+[autoload]
+
+Database="*res://Database/Database.tscn"
 
 [display]
 

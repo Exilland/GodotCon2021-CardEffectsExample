@@ -4,7 +4,7 @@ using MoreLinq;
 using System;
 using System.Collections.Generic;
 
-namespace CardEffectsSceneBased.Battle
+namespace Exilland.GodotCon.CardEffects.Battle
 {
     public partial class Deck : Control
     {

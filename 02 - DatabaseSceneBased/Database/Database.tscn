@@ -1,0 +1,55 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Database/DatabaseNode.cs" type="Script" id=1]
+[ext_resource path="res://Card/Effects/Defense.cs" type="Script" id=2]
+[ext_resource path="res://Card/Cards/CardInfo.cs" type="Script" id=3]
+[ext_resource path="res://Card/Effects/Attack.cs" type="Script" id=4]
+
+[node name="Database" type="Node"]
+script = ExtResource( 1 )
+
+[node name="Attack2" type="Node" parent="."]
+script = ExtResource( 3 )
+Title = "Attack "
+Description = "Attack 3"
+
+[node name="Attack" type="Node" parent="Attack2"]
+script = ExtResource( 4 )
+AttackValue = 3
+
+[node name="Attack" type="Node" parent="."]
+script = ExtResource( 3 )
+Title = "Attack"
+Description = "Attack 3"
+
+[node name="Attack" type="Node" parent="Attack"]
+script = ExtResource( 4 )
+AttackValue = 3
+
+[node name="Defense" type="Node" parent="."]
+script = ExtResource( 3 )
+Title = "Defense"
+Description = "Defense 2"
+
+[node name="Node" type="Node" parent="Defense"]
+script = ExtResource( 2 )
+DefenseValue = 2
+
+[node name="TripleAttack" type="Node" parent="."]
+script = ExtResource( 3 )
+Title = "Triple Attack"
+Description = "Attack 2
+Attack 2
+Attack 2"
+
+[node name="Attack" type="Node" parent="TripleAttack"]
+script = ExtResource( 4 )
+AttackValue = 2
+
+[node name="Attack2" type="Node" parent="TripleAttack"]
+script = ExtResource( 4 )
+AttackValue = 2
+
+[node name="Attack3" type="Node" parent="TripleAttack"]
+script = ExtResource( 4 )
+AttackValue = 2

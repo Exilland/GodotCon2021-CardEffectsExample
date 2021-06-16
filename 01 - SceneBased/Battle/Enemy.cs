@@ -2,7 +2,7 @@ using Godot;
 using GodotOnReady.Attributes;
 using System;
 
-namespace CardEffectsSceneBased.Battle
+namespace Exilland.GodotCon.CardEffects.Battle
 {
     public partial class Enemy : Control
     {

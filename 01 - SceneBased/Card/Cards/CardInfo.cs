@@ -1,10 +1,10 @@
-using CardEffectsSceneBased.Card.Effects.Abstract;
+using Exilland.GodotCon.CardEffects.Card.Effects.Abstract;
 using Godot;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace CardEffectsSceneBased.Card.Cards
+namespace Exilland.GodotCon.CardEffects.Card.Cards
 {
     public class CardInfo : Node
     {

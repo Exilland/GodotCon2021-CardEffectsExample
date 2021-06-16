@@ -1,9 +1,9 @@
-using CardEffectsSceneBased.Card.Cards;
+using Exilland.GodotCon.CardEffects.Card.Cards;
 using Godot;
 using GodotOnReady.Attributes;
 using System;
 
-namespace CardEffectsSceneBased.Card
+namespace Exilland.GodotCon.CardEffects.Card
 {
     public partial class Card : Control
     {

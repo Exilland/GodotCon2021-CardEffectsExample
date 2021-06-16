@@ -1,11 +1,11 @@
-using CardEffectsSceneBased.Database;
+using Exilland.GodotCon.CardEffects.Database;
 using Godot;
 using GodotOnReady.Attributes;
 using JetBrains.Annotations;
 using System;
 using System.Linq;
 
-namespace CardEffectsSceneBased.Battle
+namespace Exilland.GodotCon.CardEffects.Battle
 {
     public partial class BattleControl : Control
     {

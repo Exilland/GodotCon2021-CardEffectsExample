@@ -1,8 +1,8 @@
-using CardEffectsSceneBased.Battle;
-using CardEffectsSceneBased.Card.Effects.Abstract;
+using Exilland.GodotCon.CardEffects.Battle;
+using Exilland.GodotCon.CardEffects.Card.Effects.Abstract;
 using Godot;
 
-namespace CardEffectsSceneBased.Card.Effects
+namespace Exilland.GodotCon.CardEffects.Card.Effects
 {
     public class Defense : CardEffect
     {

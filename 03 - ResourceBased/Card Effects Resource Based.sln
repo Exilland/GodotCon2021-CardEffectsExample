@@ -1,6 +1,6 @@
 ﻿Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card Effects Scene Based", "Card Effects Scene Based.csproj", "{4A18880B-8BFB-4BF6-93A8-303D0E2484A7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Card Effects Resource  Based", "Card Effects Resource Based.csproj", "{4A18880B-8BFB-4BF6-93A8-303D0E2484A7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

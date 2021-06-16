@@ -1,9 +1,9 @@
 using System.Collections.Generic;
 using System.Linq;
-using CardEffectsSceneBased.Card.Cards;
+using Exilland.GodotCon.CardEffects.Card.Cards;
 using Godot;
 
-namespace CardEffectsSceneBased.Database
+namespace Exilland.GodotCon.CardEffects.Database
 {
     public class DatabaseSceneBased : Node, IDatabase
     {
