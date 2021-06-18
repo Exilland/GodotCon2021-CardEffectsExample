@@ -8,7 +8,6 @@ namespace Exilland.GodotCon.CardEffects.Card.Cards
 {
     public class CardInfo : Resource
     {
-        [Export] private NodePath _effectsHolderNode = ".";
         [Export] public int Cost { get; set; }
         [Export] public string? Title { get; set; }
         [Export(PropertyHint.MultilineText)] public string? Description { get; set; }

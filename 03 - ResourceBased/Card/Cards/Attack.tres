@@ -13,4 +13,3 @@ Cost = 0
 Title = "Attack"
 Description = "Attack 3"
 Effects = [ SubResource( 1 ) ]
-_effectsHolderNode = NodePath(".")
