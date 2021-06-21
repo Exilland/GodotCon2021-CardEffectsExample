@@ -1,11 +1,12 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://Database/DatabaseSceneBased.cs" type="Script" id=1]
 [ext_resource path="res://Card/Cards/TripleAttack.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Card/Cards/Defense.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Card/Cards/Attack.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Card/Cards/Attack2.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Card/Cards/SwordAndShield.tscn" type="PackedScene" id=6]
 
 [node name="Database" type="Node"]
 script = ExtResource( 1 )
-cards = [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ) ]
+cards = [ ExtResource( 5 ), ExtResource( 4 ), ExtResource( 3 ), ExtResource( 2 ), ExtResource( 6 ) ]
