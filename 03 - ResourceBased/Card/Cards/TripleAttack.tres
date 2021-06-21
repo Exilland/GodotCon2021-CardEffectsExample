@@ -15,4 +15,3 @@ Description = "Attack 2
 Attack 2
 Attack 2"
 Effects = [ SubResource( 1 ), SubResource( 1 ), SubResource( 1 ) ]
-_effectsHolderNode = NodePath(".")

@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Card/Cards/CardInfo.cs" type="Script" id=1]
+[ext_resource path="res://Card/Effects/IfFullHealth.cs" type="Script" id=2]
+[ext_resource path="res://Card/Effects/Attack.cs" type="Script" id=3]
+
+[node name="Node" type="Node"]
+script = ExtResource( 1 )
+Title = "Big Attack"
+Description = "if health = 20:
+Attack 20
+else:
+Attack 3"
+
+[node name="HealthChecker" type="Node" parent="."]
+script = ExtResource( 2 )
+
+[node name="Attack20" type="Node" parent="HealthChecker"]
+script = ExtResource( 3 )
+AttackValue = 20
+
+[node name="Attack3" type="Node" parent="HealthChecker"]
+script = ExtResource( 3 )
+AttackValue = 3

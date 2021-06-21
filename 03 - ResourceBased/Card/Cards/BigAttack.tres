@@ -1,0 +1,25 @@
+[gd_resource type="Resource" load_steps=7 format=2]
+
+[ext_resource path="res://Card/Cards/CardInfo.cs" type="Script" id=1]
+[ext_resource path="res://Card/Effects/Attack.cs" type="Script" id=2]
+[ext_resource path="res://Card/Effects/IfFullHealth.cs" type="Script" id=3]
+
+[sub_resource type="Resource" id=1]
+script = ExtResource( 2 )
+AttackValue = 3
+
+[sub_resource type="Resource" id=2]
+script = ExtResource( 2 )
+AttackValue = 20
+
+[sub_resource type="Resource" id=3]
+script = ExtResource( 3 )
+ThenEffect = SubResource( 2 )
+ElseEffect = SubResource( 1 )
+
+[resource]
+script = ExtResource( 1 )
+Cost = 0
+Title = "Big Attack"
+Description = "Attack 20 or 3"
+Effects = [ SubResource( 3 ) ]
