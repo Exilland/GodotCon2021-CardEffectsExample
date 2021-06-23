@@ -2,5 +2,5 @@ This repo contains example for a tutorial "Designing complex game effects effici
 
 # Special thanks
 
-31 for https://github.com/31/GodotOnReady library
+31 for https://github.com/31/GodotOnReady library  
 azagaya and Kenney for https://azagaya.itch.io/kenneys-ui-theme Godot theme
